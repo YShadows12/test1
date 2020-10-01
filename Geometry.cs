@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TEST1
+﻿namespace TEST1
 {
-    class Geometry2d
+    class Geometry
     {
-        public static double GetVectorLength(double x, double y)
+        public static double GetVector2DLength(double x, double y)
         {
-            double aux;
-            double length;
-            aux = x * x + y * y;
-            length = System.Math.Sqrt(aux);
+            double aux = x * x + y * y;
+            double length = System.Math.Sqrt(aux);
             return length;
 
+        }
+        public static double GetVector3DLength(double x, double y, double z)
+        {
+            double aux = x * x + y * y + z * z;
+            double length = System.Math.Sqrt(aux);
+            return length;
         }
     }
 }

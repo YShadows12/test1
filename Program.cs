@@ -1,12 +1,13 @@
-﻿using System;
-
-namespace TEST1
+﻿namespace TEST1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool result;
+            result = Utils.IsEven(5);
         }
     }
 }
+
+
